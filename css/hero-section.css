@@ -1,0 +1,89 @@
+.hero{
+  padding: 56px 0 250px;
+  background-color: #014E56;
+}
+
+.hero-title{
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.hero-container-wrapper{
+  padding-right: 30px;
+}
+
+.hero-title-span{
+  color: #F67E7E;
+}
+
+.hero-desc-span{
+  height: 4px;
+  width: 50px;
+  display: inline-block;
+  background-color: #79C8C7;
+}
+
+.hero-desc-text{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px){
+  .hero{
+    background-color: orange;
+  }
+  .hero-title{
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .hero{
+    background-color: pink;
+  }
+  .hero-title{
+    font-size: 70px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hero{
+    background-color: lightgreen;
+  }
+  .hero-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-container-wrapper{
+    max-width: 457px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-title{
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .hero-desc{
+    max-width: 457px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-desc-span{
+    display: none;
+  }
+
+  .hero-desc-text{
+    font-size: 15px;
+  }
+}
