@@ -1,4 +1,153 @@
 .distributed{
+  padding: 140px 0;
   background-color: #012F34;
   color: white;
+}
+
+.distributed-title-box{
+  margin-right: 125px;
+
+}
+
+.distributed-box-span{
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  margin-bottom: 54px;
+}
+
+.distributed-box-title{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.distributed-list{
+  padding-top: 54px;
+  gap: 32px;
+}
+
+.distributed-item-icon-box{
+  position: relative;
+}
+
+.distributed-item-icon-box::before{
+  content: "";
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: #2C6269;
+  border-radius: 50%;
+  margin-right: 23px;
+}
+
+.distributed-item-icon-box::after{
+  content: "";
+  position: absolute;
+  right: calc(100% - 40px);
+  bottom: calc(50% - 6px);
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.distributed-item:nth-child(1) .distributed-item-icon-box::after{
+  background-image: url("./../images/person-icon.svg");
+}
+
+.distributed-item:nth-child(2) .distributed-item-icon-box::after{
+  background-image: url("./../images/settings-icon.svg");
+}
+
+.distributed-item:nth-child(3) .distributed-item-icon-box::after{
+  background-image: url("./../images/scala-icon.svg");
+}
+
+.desc-box-subtitle{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.desc-box-subtext{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1200px){
+
+  .distributed-box-title{
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 992px){
+
+  .distributed-box-title{
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .distributed{
+  }
+
+  .distributed-container{
+    flex-direction: column;
+  }
+
+  .distributed-box-title{
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .distributed{
+  }
+
+  .distributed-title-box{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .distributed-list{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 375px){
+
+  .distributed-item{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .distributed-title-box{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .distributed-list{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .distributed-item{
+    margin-bottom: 48px;
+  }
+
+  .distributed-item-icon-box::before{
+    margin: 0;
+  }
 }
