@@ -7,6 +7,7 @@
   width: 160px;
   height: 40px;
   object-fit: cover;
+  margin-right: 80px;
 }
 
 .header-logo-link{
@@ -16,11 +17,17 @@
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px){
+  .header-logo-img{
+    margin-right: 50px;
+  }
+}
+
 @media only screen and (max-width: 576px){
   .header-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;x
   }
 
   .header-wrapper{
@@ -28,9 +35,14 @@
     align-items: center;
   }
 
+
+  .header-logo-img{
+    margin-right: 0px;
+  }
+
   .header-list{
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
   }
 }
